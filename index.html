@@ -3,142 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Rajat Singh Yadav | Economist & Policy Researcher</title>
-    <!-- Tailwind CSS for modern layout -->
+    <title>Dr. Rajat Singh Yadav | Personal Webpage</title>
+    <!-- Tailwind CSS for clean layout -->
     <script src="https://tailwindcss.com"></script>
-    <!-- FontAwesome for professional icons -->
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cloudflare.com">
     <style>
         html { scroll-behavior: smooth; }
-        .bg-navy-dark { background-color: #1e293b; }
-        .text-teal-accent { color: #14b8a6; }
-        .border-teal-accent { border-color: #14b8a6; }
+        /* Clean academic accents matching university styles */
+        .academic-blue { color: #1e3a8a; }
+        .bg-academic-blue { background-color: #1e3a8a; }
+        .border-academic { border-color: #cbd5e1; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
 
-    <!-- Navigation Bar -->
-    <nav class="sticky top-0 z-50 bg-white shadow-md">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold tracking-tight text-slate-900">Dr. Rajat Singh Yadav</a>
-            <div class="hidden md:flex space-x-8 font-medium text-gray-600">
-                <a href="#about" class="hover:text-teal-600 transition">About</a>
-                <a href="#experience" class="hover:text-teal-600 transition">Experience</a>
-                <a href="#research" class="hover:text-teal-600 transition">Research & Publications</a>
-                <a href="#skills" class="hover:text-teal-600 transition">Expertise</a>
-                <a href="#contact" class="hover:text-teal-600 transition">Contact</a>
+    <!-- Top Academic Navigation Bar -->
+    <nav class="bg-white border-b border-academic sticky top-0 z-50 shadow-sm">
+        <div class="max-w-4xl mx-auto px-4 flex justify-between items-center h-16">
+            <a href="#" class="text-xl font-semibold tracking-tight text-slate-900">Dr. Rajat Singh Yadav</a>
+            <div class="hidden md:flex space-x-6 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-blue-800 transition">Home</a>
+                <a href="#experience" class="hover:text-blue-800 transition">Experience</a>
+                <a href="#research-tabs" class="hover:text-blue-800 transition">Research</a>
+                <a href="#expertise" class="hover:text-blue-800 transition">Expertise & Contact</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header id="about" class="bg-navy-dark text-white py-20 px-6">
-        <div class="max-w-4xl mx-auto text-center md:text-left md:flex items-center justify-between gap-12">
-            <div class="space-y-6 max-w-2xl">
-                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">Dr. Rajat Singh Yadav</h1>
-                <p class="text-xl text-teal-accent font-medium">Economist | Policy Research & Impact Evaluation</p>
-                <p class="text-gray-300 leading-relaxed">
-                    I work as a Research Consultant on high-impact projects that strengthen financial inclusion, climate resilience, and development outcomes. Armed with a Ph.D. in Development Economics from the Gokhale Institute of Politics and Economics, I combine microeconometrics and macro-financial analysis to drive data-driven insights globally.
-                </p>
-                <div class="flex flex-wrap justify-center md:justify-start gap-4 pt-2">
-                    <a href="https://www.linkedin.com/in/dr-rajat-singh-yadav-ba347a1b3" target="_blank" class="bg-teal-600 hover:bg-teal-700 text-white px-5 py-2.5 rounded-lg font-medium transition inline-flex items-center gap-2">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
-                    <a href="https://www.researchgate.net/profile/Rajat-Yadav-3" target="_blank" class="bg-slate-700 hover:bg-slate-600 text-white px-5 py-2.5 rounded-lg font-medium transition inline-flex items-center gap-2">
-                        <i class="fab fa-researchgate"></i> ResearchGate
-                    </a>
+    <!-- Main Container Layout (Similar to Classic Academic Profiles) -->
+    <main class="max-w-4xl mx-auto px-4 py-12 flex-grow grid grid-cols-1 md:grid-cols-3 gap-10">
+        
+        <!-- Left Side Column: Profile Picture & Core Coordinates -->
+        <aside class="space-y-6 md:col-span-1 text-center md:text-left">
+            <div class="flex justify-center md:justify-start">
+                <!-- Circular Portrait Mask mapping perfectly to your professional profile image -->
+                <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-md ring-1 ring-slate-200">
+                    <img src="https://ibb.co" alt="Dr. Rajat Singh Yadav" class="w-full h-full object-cover">
                 </div>
             </div>
-            <div class="mt-10 md:mt-0 text-center">
-                <div class="inline-block p-2 rounded-full border-2 border-teal-accent/30">
-                    <div class="w-32 h-32 md:w-40 md:h-40 bg-slate-700 rounded-full flex items-center justify-center text-4xl text-teal-accent font-bold">
-                        RY
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
 
-    <!-- Professional Experience Section -->
-    <section id="experience" class="py-20 px-6 max-w-5xl mx-auto">
-        <h2 class="text-3xl font-bold border-b-4 border-teal-accent inline-block pb-2 mb-12 text-slate-900">Consulting & Leadership</h2>
-        <div class="space-y-12 relative border-l border-gray-200 pl-6 ml-4">
+            <div>
+                <h1 class="text-2xl font-bold text-slate-900">Dr. Rajat Singh Yadav</h1>
+                <p class="text-sm font-medium text-blue-800 mt-1">Research Consultant & Development Economist</p>
+                <p class="text-xs text-slate-500 mt-0.5">Ph.D., Gokhale Institute of Politics and Economics</p>
+            </div>
+
+            <!-- Social Links & Profiles -->
+            <div class="flex justify-center md:justify-start gap-3 text-lg text-slate-600">
+                <a href="https://researchgate.net" target="_blank" class="hover:text-blue-800 transition" title="ResearchGate">
+                    <i class="fab fa-researchgate"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="hover:text-blue-800 transition" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:rajatsingh.yadav@gipe.ac.in" class="hover:text-blue-800 transition" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+
+            <!-- Official Office Box Alignment -->
+            <div class="bg-white p-4 rounded-xl border border-academic text-xs space-y-2 text-left shadow-sm">
+                <p class="font-bold text-slate-900 uppercase tracking-wider text-[10px]">Contact Info</p>
+                <p class="text-slate-600"><i class="fas fa-map-marker-alt text-slate-400 mr-1.5"></i> South Asia Regional Operations / India</p>
+                <p class="text-slate-600"><i class="fas fa-building text-slate-400 mr-1.5"></i> Women's World Banking Consultant Ecosystem</p>
+                <p class="text-slate-600"><i class="fas fa-paper-plane text-slate-400 mr-1.5"></i> rajatsingh.yadav[at]gipe[dot]ac[dot]in</p>
+            </div>
+        </aside>
+
+        <!-- Right Side Column: Main Bio, Experience, & Papers Timeline -->
+        <section id="about" class="md:col-span-2 space-y-12">
             
-            <!-- WWB -->
-            <div class="relative">
-                <div class="absolute -left-10 top-1.5 w-6 h-6 bg-teal-600 rounded-full border-4 border-white shadow"></div>
-                <div class="flex flex-col md:flex-row md:justify-between items-start mb-2">
-                    <div>
-                        <h3 class="text-xl font-bold text-slate-900">Research Consultant</h3>
-                        <p class="text-teal-600 font-semibold">Women's World Banking</p>
-                    </div>
-                    <span class="text-sm bg-slate-200 px-3 py-1 rounded-full font-medium text-gray-700 mt-1 md:mt-0">May 2024 - Present</span>
-                </div>
-                <p class="text-gray-600 leading-relaxed">Lead cross-country research and qualitative/quantitative primary studies on women's digital financial inclusion and MSME enterprise resilience across South Asia and Africa. Partner with FSPs and fintech spaces to transform research insights into inclusive product architectures.</p>
+            <!-- Professional Summary Statement -->
+            <div class="space-y-4">
+                <h2 class="text-xl font-bold text-slate-900 border-b pb-2 border-academic">Biography</h2>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    I am an applied economist specializing in <strong>microeconometric methods</strong>, randomized evaluations, and data migration diagnostics. My research focuses primarily on digital financial inclusion structural design, climate resilience across marginal populations, and macroeconomic poverty index configurations.
+                </p>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Currently, I serve as a <strong>Research Consultant at Women's World Banking</strong>, where I structure multi-country quantitative profiles targeting institutional UX access and MSME capacity tracking. I have previously driven strategic evaluation briefs for the <strong>Asian Development Bank Institute (ADBI)</strong>, <strong>The World Bank</strong>, and the <strong>Finance Department (Government of Jharkhand)</strong>.
+                </p>
             </div>
 
-            <!-- ADBI -->
-            <div class="relative">
-                <div class="absolute -left-10 top-1.5 w-6 h-6 bg-teal-600 rounded-full border-4 border-white shadow"></div>
-                <div class="flex flex-col md:flex-row md:justify-between items-start mb-2">
-                    <div>
-                        <h3 class="text-xl font-bold text-slate-900">Policy Consultant</h3>
-                        <p class="text-teal-600 font-semibold">Asian Development Bank Institute (ADBI)</p>
-                    </div>
-                    <span class="text-sm bg-slate-200 px-3 py-1 rounded-full font-medium text-gray-700 mt-1 md:mt-0">Feb 2025 - Sept 2025</span>
-                </div>
-                <p class="text-gray-600 leading-relaxed">Directed cross-border regional program delivery focusing on digital public infrastructure (DPI), mobile lending UX optimization for women entrepreneurs, and financial regulatory alignment across eight South Asian countries.</p>
+            <!-- Professional Commitments & Experience Timeline -->
+            <div id="experience" class="space-y-4">
+                <h2 class="text-xl font-bold text-slate-900 border-b pb-2 border-academic">Current & Past Engagements</h2>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-start gap-2.5">
+                        <i class="fas fa-chevron-right text-blue-800 text-[10px] mt-1.5"></i>
+                        <div>
+                            <strong class="text-slate-900">Research Consultant</strong>, Women's World Banking <span class="text-slate-400 text-xs">(May 2024 – Present)</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                        <i class="fas fa-chevron-right text-blue-800 text-[10px] mt-1.5"></i>
+                        <div>
+                            <strong class="text-slate-900">Policy Consultant</strong>, Asian Development Bank Institute (ADBI) <span class="text-slate-400 text-xs">(Feb 2025 – Sept 2025)</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                        <i class="fas fa-chevron-right text-blue-800 text-[10px] mt-1.5"></i>
+                        <div>
+                            <strong class="text-slate-900">Principal Investigator</strong>, Indian School of Business (ISB) <span class="text-slate-400 text-xs">(2024 – Apr 2025)</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                        <i class="fas fa-chevron-right text-blue-800 text-[10px] mt-1.5"></i>
+                        <div>
+                            <strong class="text-slate-900">Research Consultant</strong>, The World Bank <span class="text-slate-400 text-xs">(June 2023 – May 2024)</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                        <i class="fas fa-chevron-right text-blue-800 text-[10px] mt-1.5"></i>
+                        <div>
+                            <strong class="text-slate-900">Lead Economist</strong>, Department of Finance, Government of Jharkhand <span class="text-slate-400 text-xs">(2020 – 2021)</span>
+                        </div>
+                    </li>
+                </ul>
             </div>
 
-            <!-- ISB -->
-            <div class="relative">
-                <div class="absolute -left-10 top-1.5 w-6 h-6 bg-teal-600 rounded-full border-4 border-white shadow"></div>
-                <div class="flex flex-col md:flex-row md:justify-between items-start mb-2">
-                    <div>
-                        <h3 class="text-xl font-bold text-slate-900">Principal Investigator</h3>
-                        <p class="text-teal-600 font-semibold">Indian School of Business (ISB)</p>
-                    </div>
-                    <span class="text-sm bg-slate-200 px-3 py-1 rounded-full font-medium text-gray-700 mt-1 md:mt-0">2024 - Apr 2025</span>
-                </div>
-                <p class="text-gray-600 leading-relaxed">Managed a USD 0.5 Million grant project assessing climate resilience and tribal livelihoods in Jharkhand. Implemented Python-driven NLP tools for data exploration and qualitative behavior tracking among localized communities.</p>
-            </div>
-
-            <!-- World Bank -->
-            <div class="relative">
-                <div class="absolute -left-10 top-1.5 w-6 h-6 bg-teal-600 rounded-full border-4 border-white shadow"></div>
-                <div class="flex flex-col md:flex-row md:justify-between items-start mb-2">
-                    <div>
-                        <h3 class="text-xl font-bold text-slate-900">Research Consultant</h3>
-                        <p class="text-teal-600 font-semibold">The World Bank</p>
-                    </div>
-                    <span class="text-sm bg-slate-200 px-3 py-1 rounded-full font-medium text-gray-700 mt-1 md:mt-0">June 2023 - May 2024</span>
-                </div>
-                <p class="text-gray-600 leading-relaxed">Directed a multi-country equity program utilizing Theory of Change frameworks. Built deep capacity metrics with domestic statistical bodies to structure systemic poverty measurement initiatives.</p>
-            </div>
-
-            <!-- Lead Economist Govt -->
-            <div class="relative">
-                <div class="absolute -left-10 top-1.5 w-6 h-6 bg-teal-600 rounded-full border-4 border-white shadow"></div>
-                <div class="flex flex-col md:flex-row md:justify-between items-start mb-2">
-                    <div>
-                        <h3 class="text-xl font-bold text-slate-900">Lead Economist</h3>
-                        <p class="text-teal-600 font-semibold">Government of Jharkhand - Department of Finance</p>
-                    </div>
-                    <span class="text-sm bg-slate-200 px-3 py-1 rounded-full font-medium text-gray-700 mt-1 md:mt-0">2020 - 2021</span>
-                </div>
-                <p class="text-gray-600 leading-relaxed">Spearheaded the drafting of the official State Economic Survey. Organized large-scale macroeconomic and public finance data configurations for legislative assembly integration during critical state budgeting processes.</p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Research and Publications -->
-    <section id="research" class="bg-gray-100 py-20 px-6">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-3xl font-bold border-b-4 border-teal-accent inline-block pb-2 mb-12 text-slate-900">Selected Research & Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Interchanging Document Profile Sections (Tab Control Layout) -->
+            <div id="research-tabs" class="space-y-4">
+                <h2 class="text-xl font-bold text-slate-900 border-b pb-2 border-academic">Research Portfolio</h2>
                 
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between">
-                    <div>
-                        <span class="text-xs font-semibold text-teal-600 uppercase tracking-widest block mb-1">Book Project</span>
-                        <h3 class="text-lg font-bold text-slate-900 mb-3">Planned and Organized Deficit Spending (PODS)</h3>
+                <!-- Tab Switching Handles -->
+                <div class="flex border-b border-slate-200 text-sm gap-6 font-medium">
+                    <button onclick="switchTab('pubs')" id="btn-pubs" class="pb-2 text-blue-800 border-b-2 border-blue-800 font-semibold focus:outline-none">Selected Works</button>
+                    <button onclick="switchTab('working')" id="btn-working" class="pb-2 text-slate-500 hover:text-slate-800 border-b-2 border-transparent focus:outline-none">Working Papers</button>
+                </div>
+
+                <!-- Selected Projects Tab Container -->
+                <div id="tab-pubs" class="tab-content active pt-2 space-y-4">
+                    <div class="p-3.5 bg-white rounded-lg border border-slate-200 shadow-sm text-sm">
+                        <span class="text-[10px] bg-amber-100 text-amber-800 font-semibold px-2 py-0.5 rounded-md uppercase tracking-wider block w-max mb-1.5">Book Track</span>
+                        <h4 class="font-semibold text-slate-900">Planned and Organized Deficit Spending (PODS)</h4>
+                        <p class="text-xs text-slate-500 mt-1">Chief Technology Officer role governing validation scripts and architectural publication loops.</p>
+                    </div>
+                    <div class="p-3.5 bg-white rounded-lg border border-slate-200 shadow-sm text-sm">
+                        <span class="text-[10px] bg-teal-100 text-teal-800 font-semibold px-2 py-0.5 rounded-md uppercase tracking-wider block w-max mb-1.5">Policy Insight</span>
